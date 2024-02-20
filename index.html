@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre HTML5</title><!--entre 55 y 65 caracteres -->
+  <meta name="description"
+    content="This page is to undestand that you're gonna learn the most important skills to get a job">
+  <!-- no mas de 165 caracteres -->
+  <!-- Metainformacion -->
+
+  <meta name="theme-color" content="#222"><!-- color de la barra en dispositivos moviles -->
+
+  <link rel="canonical" href="http://tudominio.com/la-url_canonica"><!-- ruta absoluta osea remoto -->
+  <link rel="stylesheet" href="style.css">
+  <!-- logo del icono; en formato png -->
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon"><!-- pc -->
+  <link rel="apple-touch-icon" href="shortcut icon" href="../img/favicon.png">
+  <!-- phone -->
+
+  <meta property="og:title" content="">
+  <meta property="og:description"
+    content="This page is to undestand that you're gonna learn the most important skills to get a job">
+  <meta property="og:image" content="https://tudominio.com/..img/periodicTableHTML.webp">
+  <!-- (servidor en internet)ruta absoluta; es remoto-----Esto si -->
+  <!--::: Esto no---ruta relativa es solo la direccion en mi computador; o solo la direccion sin https:// 
+  (Dominio local); en computador o usando live server--que incluye  http: tambine es dominio local-->
+  <meta property="og:url" content="https://tudominio.com/la-url_canonica">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Fernand52464744">
+
+</head>
+
+<body>
+  <!-- <etiqueta atributo="valor del atributo"> -->
+  <header>
+    <h1>HTML tag elements</h1>
+    <section>
+      <h2 id="indice">Indice:</h2>
+      <ul>
+        <li><a href="#text-levelSemantic">Text-level semantics</a></li>
+        <li><a href="#text-levelSemantic+++">Text-level semantics +++</a></li>
+        <li><a href="index.html#formating-levels">Etiquetas de formateo</a></li>
+        <li><a href="#multimedia-and-images">Multimedia e imagenes</a></li>
+        <li><a href="#grouping-content">Grouping content</a></li>
+        <li><a href="#special-link-protocols">Protocolos especiales de los enlaces</a></li>
+        <li><a href="#interactive-elements">Elementos interactivos</a></li>
+        <li><a href="#embedding-content">Embedding content</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#data-attributes">Data attributs</a></li>
+      </ul>
+      <nav>
+    </section>
+
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>HTML tags:</h2>
+      <section id="text-levelSemantic">
+        <h3><u>Text-level semantics</u></h3>
+        <div>
+          <span>span</span>,
+          <b>negrita: b</b>,
+          <i>italica: i</i>,
+          <u>subrayado: u</u>,
+          sup: e=mc<sup>2</sup>,
+          sub: H<sub>2</sub>O,
+          <mark>mark</mark>,
+          <small>small</small>,
+          <s>tachado: s</s>,
+        </div>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="text-levelSemantic+++">
+        <h3><u>Text-level semantic +++</u></h3>
+        <div>
+          <strong>importancia: strong</strong>,
+          <em>enfasis: em</em>,
+          <blockquote>Solo se, que no se nada (blockquote)</blockquote>
+          <!-- Grouping content -->
+          <cite>- Socrates (cite)</cite><br>,
+          Time <time datetime="2017-04-29T19:00">19:00</time><br>,
+          Todo es <del>insuficiente</del> <ins>suficiente</ins>
+        </div>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="formating-levels">
+        <h3><u>Etiquetas de formateo</u></h3>
+        <div class="description">
+          Para añadir codigo ::: esta seccion se usa <b><mark>pre</mark></b>--perteneciente a
+          <b>grouping content</b>
+          y <b><mark>code</mark></b> es inline perteneciente a <b>text-level semantics</b>
+        </div>
+        <pre>
+          Tareas por realizar:
+           - ordenar mi cama
+           - leer psicologia
+           - aprender ingles
+           - aprender programacin
+          Advice:
+           - just focus
+           - don't think about a girl
+           - ejoy
+          Motivation:
+           -we're on the way, just do it to get to the goal
+        </pre>
+        <pre style="background: black; color: whitesmoke">&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;Hello World&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;</pre>
+        Type <code>npm install</code> in your terminal to install a project's dependencies.
+        <br>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="multimedia-and-images">
+        <h3><u>Image and multimedia</u></h3>
+        <div>El atributo <i>preload</i> es muy importante.</div>
+        <!-- Todos de esta seccion pertenecen a etiquetas inline -->
+        <audio src="../media/me.ogg" preload controls></audio><!--autoplay muted loop preload-->
+        <img src="../img/public.avif" alt="nature" title="nature">
+        <img src="../img/blackHole.gif" alt="blackHole">
+        <img src="../img/nt.svg" alt="">
+        <!-- formato svg son vectores -->
+        <video src="../media/real.mp4" width="250px" height="auto" poster="../img/g.svg" preload controls></video>
+        <!-- poster preload-->
+        <br>
+        <audio controls>
+          <source src="../media/real.mp3" type="">
+          <source src="../media/real.mp4" type="audio/mp4">
+        </audio>
+        <video controls>
+          <source src="../media/real.mp4" type="video/mp4">
+          <source src="../media/real.dks" type="">
+        </video>
+
+        <br>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="grouping-content">
+        <h3><u>Grouping content</u></h3>
+        <figure>
+          <img src="../img/periodicTableHTML.webp" alt="periodicTableHTML">
+          <figcaption>periodicTableHTML</figcaption>
+        </figure>
+        <mark>Figure > figcaption</mark>
+        <div id="flex">
+          <div>
+            <h4>Order list:</h4>
+            <ol>
+              <li>first</li>
+              <li>second</li>
+              <li>third</li>
+              <li>fourth</li>
+            </ol>
+            <ol start="5">
+              <li>fifth</li>
+              <li>sixth</li>
+              <li>seventh</li>
+            </ol>
+            <ol type="a" reversed>
+              <li>first</li>
+              <li>second</li>
+              <li>third</li>
+              <li>fourth</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Unorder list:</h4>
+            <ul type="circle">
+              <!-- type="square" -->
+              <li>Peach</li>
+              <li>Apple</li>
+              <li>Banana</li>
+              <li>Pear</li>
+              <li>Cherry</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Description list:</h4>
+            <dl>
+              <dt>Programing</dt>
+              <dd>Learn programing and get a free code camp title</dd>
+              <dt>Bussines</dt>
+              <dd>Course about bussines, and read books</dd>
+              <dd>See the strategy, how to make money</dd>
+            </dl>
+          </div>
+          <div>
+            <h4>Table:</h4>
+            <table border="1px">
+              <caption>Datos:</caption>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Country</th>
+                  <th>Dwelling</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alejandro</td>
+                  <td>34</td>
+                  <td colspan="2">Brasil</td>
+                </tr>
+                <tr>
+                  <td>Elias</td>
+                  <td>26</td>
+                  <td rowspan="2">German</td>
+                  <td>Italy</td>
+                </tr>
+                <tr>
+                  <td>Naomi</td>
+                  <td>27</td>
+                  <td>Canada</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colspan="4"><small>Datos de los candidatos a ser elegidos</small></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="special-link-protocols">
+        <h3><u><mark>Protocolos especiales de los enlaces</mark></u></h3>
+        Los enlaces <b>a</b> pertenecen a <b>text-element semantics</b>
+        <div>
+          Primero un uso, con <em>Enlace como imagen</em> Normal:
+          <a href="https://www.youtube.com/watch?v=UEngvxZ11sw">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="80px" height="80px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z"
+                fill="#050D42" />
+              <path
+                d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z"
+                fill="#050D42" />
+              <path
+                d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z"
+                fill="#050D42" />
+              <path
+                d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z"
+                fill="#2F4BFF" />
+            </svg>
+          </a>
+        </div>
+        <div>Con los enlaces podemos <mark>acceder a otros protocolos</mark>: abrir aplicacion(como email, para mandar
+          un mensaje),
+          marcar un telefono</div>
+        <a href="mailto:ivanssilva342@gmail.com">Enlace a correo electronico</a><br>
+        <a href="tel:+51940177321">Enlace a realizar una llamada</a><br>
+        <a href="https://api.whatsapp.com/send?phone=+51940177321&text=Hola Tio">Enlace hacia whatsapp</a>
+        <br>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="interactive-elements">
+        <h3><u>Elementos de interactividad</u></h3>
+        <div id="text"></div>
+        <button
+          onclick="document.getElementById('text').innerHTML='Presionaste el boton, es algo que no deviste de hacer'">
+          Texto programado
+        </button><br>
+        <!-- Un acordeon con details -->
+        <details>
+          <!-- carga abierto por defecto con: open -->
+          <summary>New type of page secction with acordeon (detalis>summary)</summary>
+          <article>
+            <h3>Contenido del acordeon</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet at saepe corporis, iusto vel
+              tempora rem odio nesciunt maiores sint, labore consectetur est optio. Natus rem obcaecati vel aliquid.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio, commodi, adipisci odit quod sunt
+              delectus iste aliquid ducimus corporis officia nisi illo. In, eum ex harum aspernatur ducimus quo!</p>
+            <img src="../img/nt.svg" alt="alien atmosphere">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos commodi, ipsum optio nostrum nobis
+              temporibus saepe ullam laboriosam eligendi? Id repudiandae reiciendis obcaecati quibusdam doloribus veniam
+              nihil veritatis inventore?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum error reiciendis
+              itaque fuga minima. Laboriosam debitis repudiandae recusandae dignissimos. Obcaecati in reprehenderit
+              accusantium unde eum, ratione voluptatem maxime maiores earum? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Aut, dolorem odio est voluptas minima et quos rerum numquam nobis nam repellendus
+              nesciunt tempore recusandae asperiores ex fugiat, dignissimos libero fuga.</p>
+          </article>
+        </details>
+        <!-- Una ventana modal con dialog (dialog es experimental)-->
+        <dialog open>
+          Esta es una ventana modal con HTML
+        </dialog>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="embedding-content">
+        <h3><u>Embedding content</u>:se recomienda tener no mas de un iframe por documento html</h3>
+        <!-- iframe es un elemento inline -->
+        <!-- No es recomendable tener mas de un iframe por documento html -->
+        <div>
+          <iframe src="table.html" frameborder="1"></iframe>
+          <iframe src="https://htmlreference.io/element/param/" frameborder="0"></iframe>
+          <iframe src="../media/cheatsheet-a5.pdf" frameborder="0"></iframe>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28248.04903367957!2d-81.55144510399248!3d27.74795695503753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd00b097380711%3A0x582f6d280f5fc5cc!2sFrostproof%2C%20Florida%2033843%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1697934489801!5m2!1ses-419!2spe"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EavsZQi-Zsg?si=PP0j06vvrYnSC89i"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <br>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="forms">
+        <h3><u>Formulario</u></h3>
+        <article>
+          <h4>Elementos de formulario:</h4>
+          <form action="">
+            <input type="text"><!-- value="cualquier valor por defecto" -->
+            <!-- minlength="2" maxlength="5" size="40" autofocus required -->
+            <input type="text" name="" id="" placeholder="disabled: esto no se envia aunque tenga value" size="36"
+              disabled>
+            <input type="text" name="" id="" placeholder="readonly: esto se envia si hay value claro" size="32"
+              readonly>
+            <br>
+            <input type="checkbox" name="" id="">
+            <input type="radio" name="" id="">
+            <!-- checked -->
+            <input type="date" name="" id="">
+            <input type="time" name="" id="">
+            <input type="color" name="" id="">
+            <input type="button" value="Button">
+            <input type="submit">
+            <input type="reset">
+            <input type="button" value=""><!-- le damos funcionalidad con js -->
+            <input type="file" name="" id="" multiple>
+            <input type="hidden" name="">
+            <input type="email" name="" id="" placeholder="email">
+            <input type="range" name="" id=""><!-- min="5" max="20" step="0.5" -->
+            <input type="number" name="" id=""><!-- min="5" max="20" step="0.5" -->
+            <input type="tel" name="" id="" placeholder="telephone">
+            <input type="password" name="" id="" placeholder="password">
+            <input type="search" name="" id="" placeholder="search">
+            <input type="url" name="" id="" placeholder="url">
+
+            <input type="image" src="../img/periodicTableHTML.webp" alt="htmlperiodic" width="250px">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <!-- readonly required -->
+            <select name="country" id="" size="4" multiple>
+              <optgroup label="South America">
+                <option value="ur">Uruguay</option>
+                <option value="br">Brazil</option>
+                <option value="ar">Argentina</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="it">Italy</option>
+                <option value="gr">Germany</option>
+                <option value="en">England</option>
+                <option value="fr">France</option>
+                <option value="sp">Spain</option>
+              </optgroup>
+            </select>
+
+            <fieldset>
+              <legend>Nombre:</legend>
+              <label for="name">
+                <input type="text" id="name" placeholder="Name">
+              </label><br><br>
+              <label for="terms">
+                <input type="checkbox" name="term" id="terms">Terminos y condiciones
+              </label>
+            </fieldset>
+            <br>
+            <button type="button">No hace nada se da funcion con JS</button>
+
+            <button>Enviar</button><!-- por defecto es type="submit" -->
+          </form>
+        </article>
+        <article>
+          <h4>Formulario: <i>validacion y algunos atributos y sus propiedades muy importantes</i></h4>
+          <form action="" method="post" autocomplete="off">
+            <!-- action="url hacia donde se va a enviar mi formulario" -->
+            <!-- Metodos de envio: 
+              get---es por defecto, visible en url.
+              post----es un poco mas seguro,oculto, no se encuentra en la url
+            -->
+            <label for="username">Nombre:</label>
+            <input type="text" name="name" id="username" pattern="^[A-Za-z]$" placeholder="Name"
+              title="Este texto se va a observar en la advertencia, al no rellenar con lo solicitado en pattern"
+              required><br>
+            <!-- autocomplete="off"; it also can be used just in my input -->
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required><br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+          </form>
+        </article>
+        <article>
+          <h4>Selects, Radios y Checkbox:</h4>
+          <form>
+            <fieldset>
+              <legend>Elige tu idioma:</legend>
+              <select name="leanguage" required>
+                <!-- required -->
+                <option value="" selected>Choose one option</option>
+                <!-- selected: para tener seleccionado -->
+                <option value="sp">Spanish</option>
+                <option value="en">English</option>
+                <option value="rs">Russian</option>
+                <option value="jp">Japanese</option>
+                <option value="pt">Portuguese</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Elige tu lenguaje de programacion favorito</legend>
+              <!-- required; vasta con poner a uno de los inputs -->
+              <label for="radio-js">
+                <input type="radio" name="programing-lg" id="radio-js" value="js">JavaScript
+              </label>
+              <label for="radio-py">
+                <input type="radio" name="rograming-lg" id="radio-py" value="py" checked>Pyton
+              </label>
+              <!-- checked: para tener seleccionado -->
+              <label for="radio-php">
+                <input type="radio" name="rograming-lg" id="radio-php" value="php">PHP
+              </label>
+              <label for="radio-rb">
+                <input type="radio" name="rograming-lg" id="radio-rb" value="rb">Rugbby
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Elige tus intereses</legend>
+              <label>
+                <!-- checked -->
+                <input type="checkbox" name="" id="" checked>Deportes
+              </label>
+              <label>
+                <input type="checkbox" name="intereses" id="" value="programacion" checked>Programacion
+              </label>
+              <label>
+                <input type="checkbox" name="intereses" id="" value="finanzas">Finanzas
+              </label>
+              <label>
+                <input type="checkbox" name="intereses" id="" value="salud" checked>Salud
+              </label>
+              <label>
+                <input type="checkbox" name="intereses" id="" value="peliculas">Peliculas
+              </label>
+            </fieldset>
+            <p>
+              <!-- Este es la unica forma para utilizar required en un checkbox; si no no tendria sentido  -->
+              <!-- Terminos y condiciones es la unica forma -->
+              <!-- no se requiere un value; solo un name -->
+              <label>
+                <input type="checkbox" name="terminos" id="" required><i>Terminos y
+                  condicines</i>
+              </label>
+            </p>
+
+            <input type="submit" value=submit>
+            <input type="reset" value="reset">
+          </form>
+        </article>
+        <article>
+          <h4>Formulario de contacto: <mark>funcional</mark> </h4>
+          <!-- esta action que puse es libre; que me permite usar para mandar mi formulario a mi correo 
+          (servicio libre API): Al correo que me llega la informacion-->
+          <form action="https://formsubmit.co/ivansfuerza@gmail.com" method="post">
+            <!-- title="" ; esto funciona muy bien cuando utilizamos patter. Al no cumplir la condicion de pattern me muestra este valor de title -->
+            <input type="text" name="name" placeholder="Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="Nombre solo acepta letras y espacios en blanco" required><br>
+            <input type="email" name="email" placeholder="Correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"><br>
+            <textarea name="comentary" id="" cols="30" rows="10" required></textarea><br>
+            <input type="submit">
+          </form>
+        </article>
+        <a href="#indice">☝️</a>
+      </section>
+      <hr>
+      <section id="data-attributes">
+        <h3><u>Data attributs & Accesibilidad webb</u></h3>
+        <h4>Data attributs: Muy muy importante, para fraimwork como bootstrap</h4>
+        <ul>
+          <li data-id="1" data-name="sm">summer</li>
+          <li data-id="2" data-name="sp">spring</li>
+          <li data-id="3" data-name="at">autum</li>
+          <li data-id="4" data-name="wt">winter</li>
+        </ul>
+        <h4>Accesibilidad webb: etica del desarrollador</h4>
+        <h5 role="title">Las estaciones del año</h5>
+        <ul role="list">
+          <li tabindex="1" role="listitem">summer</li>
+          <li tabindex="2" role="listitem">spring</li>
+          <li tabindex="3" role="listitem">autum</li>
+          <li tabindex="4" role="listitem">winter</li>
+        </ul>
+        <a role="link" aria-label="En este sitio encuentra informacion detallada sobre aria"
+          href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA" target="_blank">ARIA</a>
+        <br>
+        <a role="link" aria-label="En este enlace podra encontrar mas informacion reciente sobre las estaciones del año"
+          href="https://html5accessibility.com/" target="_blank">Mas informacion...</a><br>
+        <a href="#indice">☝️</a>
+      </section>
+    </article>
+
+  </main>
+  <footer>
+    <hr>
+    <h2>Some more resources:</h2>
+    caracteres especiales html: googlear
+    -- <code>&malt</code>=== &malt;
+    <div>
+      <div>
+        <h3><u>Etiquetas semanticas</u></h3>
+        <pre style="background: black; color: whitesmoke">
+          &lt;header&gt;
+            &lt;nav&gt;
+            &lt;/nav&gt;
+          &lt;/header&gt;
+          &lt;main&gt;
+            &lt;article&gt;
+              &lt;h2&gt;We will talk about HTML tags&lt;/h2&gt;
+              &lt;section&gt;
+              &lt;/section&gt;
+
+              &lt;section&gt;
+              &lt;/section&gt;
+
+              &lt;section&gt;
+              &lt;/section&gt;
+
+              &lt;section&gt;
+              &lt;/section&gt;
+
+            &lt;/article&gt;
+
+            &lt;/aside&gt;
+              ...
+            &lt;/aside&gt;
+
+          &lt;/main&gt;
+          &lt;footer&gt;
+            &lt;adress&gt;Direccion fisica e Información de contacto&lt;/adress&gt;
+             &copy; <code>Todos los derechos reservados</code>
+          &lt;/footer&gt;
+          
+        </pre>
+      </div>
+      article>section-----html y las secciones hablan del mismo tema
+      <br>
+      section>article---- tema relacionado pero no el mismo; ejm los diferentes lenguajes de programacion.
+      <br>
+      div&span----etiquetas contenedoras sin semantica
+      <br>
+      h1 & main----solo puede haber uno por documento
+    </div>
+    <a href="https://projects.paul-george.me/html_periodic_table/" target="_blank" rel="nofollow">
+      Periodic Table of HTML Tag
+      Elementes<!-- rel="nofollow" es importante: NO usar en links a mis redes sociales; al ser otras paginas del mismo tema USAE ESTE ATRIBUTO -->
+    </a>
+    <div>
+      <span style="font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> Est et
+      tempore consequuntur eveniet quos maxime repellendus, ab porro expedita hic accusamus dolores illum aliquam ex
+      esse autem, voluptatibus pariatur iure!
+    </div>
+    <!-- por defecto----    font-family: Timmes New Roman -->
+
+    <hr>
+    <h3>Most importants links:</h3>
+    <div>Cards to share for twitter: <a
+        href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started">cards-guide</a>
+    </div>
+    <div>Open graph protocol: cards for facebook and whatsapp even others <a
+        href="https://ogp.me/">cards-guide-general-open-graph</a></div><br>
+    <div>Vectores SVG: <a href="https://www.svgrepo.com/" target="_blank">SVG-Vectors</a></div>
+    <div>Emogies: <a href="https://emojipedia.org/es/search?q=up" target="_blank">Emogipedia</a></div>
+    <div>Iconos img.ico: <a href="https://css.gg/" target="_blank">favicon</a></div>
+    <div>Png to SVG: <a href="https://new.express.adobe.com/tools/convert-to-svg"
+        target="_blank">adobe-conver-to-svg</a></div>
+    <div>HTMLREFERENCE: <a href="https://htmlreference.io/element/dialog/" target="_blank">htmlreference</a></div>
+    <div>CSSREFERENCE: <a href="https://cssreference.io/" target="_blank">cssreference</a></div>
+    <div>PERIODIC TABLE: <a href="https://mialtoweb.es/webs/tabla/#arriba" target="_blank">Another periodic table of HTML</a></div>
+    <div>CODE TABLE: <a href="https://ascii.cl/es/codigos-html.htm" target="_blank">HTML && ASCII and more..., code table</a></div>
+    <a href="#indice">☝️</a>
+  </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 33%;
+  height: auto;
+}
+
+a[href="#indice"] {
+  text-decoration: none;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div iframe {
+  width: 32%;
+  height: 200px;
+}
+
